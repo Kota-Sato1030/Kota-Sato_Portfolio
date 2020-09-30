@@ -172,26 +172,8 @@
     <p>copyright Kota Sato - Portfolio Site</p>
   </footer>
   <script src="scripts/hambarger.js"></script>
+  <script src="scripts/pageTop.js"></script>
   <script src="scripts/svgAnime.js"></script>
   <script src="scripts/svgAnime2.js"></script>
-  <script>
-    $(function () {
-      var pagetop = $('#page_top');
-      pagetop.hide();
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {  //100pxスクロールしたら表示
-          pagetop.fadeIn();
-        } else {
-          pagetop.fadeOut();
-        }
-      });
-      pagetop.click(function () {
-        $('body,html').animate({
-          scrollTop: 0
-        }, 500); //0.5秒かけてトップへ移動
-        return false;
-      });
-    });
-  </script>
 </body>
 </html>
