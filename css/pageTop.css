@@ -87,7 +87,7 @@
 }
 #page_top a::after{
   content: 'PAGE TOP';
-  font-size: 2px;
+  font-size: 10px;
   color: #fff;
   position: absolute;
   top: 20px;

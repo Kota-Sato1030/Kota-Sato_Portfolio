@@ -170,8 +170,8 @@ hr {
 #mobile {
   position: fixed;
   background-color: rgba(0,184,255,0.5);
-  top: 10px;
-  right: 10px;
+  top: 0;
+  right: 0;
   z-index: 99;
   border-radius: 5px;
   padding: 3%;
@@ -306,7 +306,7 @@ div.globalMenuSp {
   top  : 0;
   left : 0;
   color: #fff;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.9);
   text-align: center;
   width: 100%;
   height: 100%;
@@ -327,9 +327,9 @@ div.globalMenuSp ul li {
   transition: .4s all;
 }
 
-div.globalMenuSp ul li:hover{
-  background: rgba(0,0,0,0.7);
-}
+/* div.globalMenuSp ul li:hover{
+  background: rgba(0,0,0,0.9);
+} */
 
 div.globalMenuSp ul li a {
   display: block;
@@ -339,6 +339,32 @@ div.globalMenuSp ul li a {
 
 div.globalMenuSp ul li a img {
   width: 100px;
+}
+
+.globalMenuSp_nav {
+	float: left;
+	line-height: 25px;
+}
+
+.globalMenuSp_nav_mr {
+	margin-right: 1rem;
+}
+
+.globalMenuSp_border {
+  display: flex;
+	align-items: center;
+	font-size: 12px;
+}
+
+.globalMenuSp_border:before {
+  content: "";
+  height: 1px;
+  flex-grow: 1;
+  background-color: #fff;
+}
+
+.globalMenuSp_border:before {
+  margin-right: 1rem; /* 文字の左隣 */
 }
 
 div.globalMenuSp.active {
